@@ -1,0 +1,304 @@
+body{
+    font-size: 14px !important;
+}
+.bgprincipal{
+    background-color: #BF0811 !important;
+    color: white;
+}
+.colortextprincipal{
+    color: #BF0811;
+}
+#nav{
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+#navmenu{
+    flex-direction: column-reverse;
+}
+/* DropDownMenu */
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+a.dropdown-item{
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a.dropdown-item:hover{
+    color: #BF0811;
+    
+}
+/* .dropdown-menu.dropdown-menu-right.show{
+    
+} */
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+h1{
+    font-family: Montserrat,sans-serif !important;
+    font-size: 42px !important;
+    font-weight: 400;
+    text-shadow: 0 1px 5px rgba(0,0,0,.4);
+}
+.slide{
+    width: 100%;
+    height: 470px;   
+}
+
+/* .slide{
+    max-height: 100%;
+    width: auto;
+}
+
+#slider{
+    height:70vh
+} */
+/* .slide-show{
+    display: block;
+    width: 100%;
+    height: 32%;
+} */
+#buscador{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#beneficios{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 60px;
+}
+#rowimg{
+    margin-top: 20px !important;
+}
+#contenedordeinputs{
+    border-radius: 10px;
+    padding: 8px;
+    background: rgba(245, 242, 242, 0.76);
+}
+/* .inputsearch{
+
+} */
+.input{
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+.form-control:focus {
+    border-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control {
+    border-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.inputs:focus-within{
+    border-bottom: 5px solid yellow;
+}
+#slider{
+    position: relative;
+    background-image: url("http://192.168.43.221:5500/FrontAereotour/img/banner_coomotor_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 450px;
+}
+#buscador{
+    top: 30%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    
+}
+#inputs{
+    border-radius: 12px;
+    padding: 5px;
+    background: rgba(212, 194, 194, 0.3);
+}
+input{
+    height: 100%;
+}
+#destinos{
+    margin-top: 50px;
+}
+/* AutocompleteStyles */
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+/* Selector */
+.ui-autocomplete > li > div {
+    /* ImgIconBackGroud */
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    white-space: nowrap;
+}
+.ui-state-hover,
+.ui-state-active,
+.ui-state-focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* OFertas */
+.ingresado{
+    position: relative;
+    background: red;
+}
+.ingresado>img{
+    position: absolute;
+}
+#ofertas{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#ofertas>div{
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+}
+#footer{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#rutaspopulares>div{
+    color: #BF0811;
+}
+#rutaspopulares>div>h4{
+    color: #262626;
+}
+.redes-link{
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #BF0811;
+}
+.imgoferta{
+    width: 100%;
+    height: 220px;
+}
+.contenido{
+    position: relative;
+}
+.precio{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    display: none;
+}
+.lugarid{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+.hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.carta{
+    position: relative;
+}
+.hover:hover{
+    background-color: black;
+    opacity: 0.5;
+    z-index: 99;
+}
+
+@media (max-width: 576px) {
+    .slide{
+        object-fit: cover;
+        width: 100%;
+        
+    }
+    #slider{
+        background-size: cover;
+    }
+    #buscador{
+        padding-left: 10px !important;
+        position: absolute;
+        top: 100px;
+    }
+    #inputs{
+        background-color: rebeccapurple;
+        flex-direction: column;
+    }
+    #buscador>div{
+        margin: 0px;
+        text-align: center !important;
+    }
+    #buscador>div>h1{
+        font-size: 1.5rem;
+    }
+  }
+

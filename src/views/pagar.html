@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.html'); -%>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/pagar.js"></script>
+    <!-- <script src="/bootstrap/dist/js/bootstrap.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>var reserva = "<%= reserva.object.transactionToken %>";
+    console.log(reserva)
+    generateAuthorization(reserva);
+    ;</script>
+
+</body>
+
+</html>

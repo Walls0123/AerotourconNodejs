@@ -1,0 +1,31 @@
+{
+  "name": "aerotuourconnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "configh":"npm config set scripts-prepend-node-path true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@popperjs/core": "^2.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "firebase": "^7.8.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "mongodb": "^3.5.0",
+    "morgan": "^1.9.1",
+    "mssql": "^6.0.1",
+    "request": "^2.88.2"
+  }
+}

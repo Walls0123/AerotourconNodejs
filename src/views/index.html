@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <!-- Bootstrap -->
+
+
+    <%- include('partials/head.html'); -%>
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- <script src="/bootstrap/dist/js/bootstrap.js"></script> -->
+    <script src="/js/index.js"></script>
+</head>
+
+<body>
+    <!-- Nav -->
+    <%- include('partials/navigation.html'); -%>
+    <!-- Principal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 bgprincipal">
+                    <div class="text-center w-100">
+                        <img src="../img/AER.png" alt="">
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body p-0 border-bottom-0 bgprincipal">
+                    <img class="modal-content border-0"
+                        src="https://doofindermedia.s3.amazonaws.com/blog/2019/09/26/140620-error-500-doofinder.jpg"
+                        alt="">
+                </div>
+                <div class="modal-footer p-0 bgprincipal">
+                    <button type="button" class="m-0 btn btn-block bgprincipal" style="color: white;"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slider" class="d-block">
+        <img src="../img/banner_coomotor_2.jpg" alt="" class="slide">
+        <form id="formreserva" action="">
+            <div class="row m-0" id="buscador">
+                <div class="text-center mb-4 row w-100">
+                    <h1 class="w-100" style="color: white;">
+                        Compra tu boleto HOY
+                    </h1>
+                </div>
+                <!-- <div id="contenedordeinputs" class="row m-0 w-100">
+                    <div class="col-md-3 input w-100 p-0">
+                        <input class="inputsearch" type="text">
+                        <i class="fab fa-instagram fa-2x""></i>
+                    </div>
+                    <div class="col-md-3 input w-100 p-0">
+                        <input class="inputsearch " type="text">
+                        <i class="fab fa-instagram fa-2x""></i>
+                    </div>
+                    <div class="col-md-3 input w-100 p-0">
+                        <input class="inputsearch" type="text">
+                        <i class="fab fa-instagram fa-2x""></i>
+                    </div>
+                    <div class="col-md-3 input w-100 p-0">
+                        <input class="inputsearch" type="text">
+                        <i class="fab fa-instagram fa-2x""></i>
+                    </div>
+                </div> -->
+                <div class="row d-flex" id="inputs">
+                    <div class="flex-column pl-0 pr-0 pt-1 pb-1 mb-2 inputs">
+                        <div class="inner-addon right-addon w-100 ui-widget">
+                            <input class="form-control" id="searchorigen" autocomplete="off"
+                                placeholder="Buscar Origen">
+                        </div>
+                    </div>
+                    <div class="flex-fill p-1 inputs">
+                        <div class="inner-addon right-addon w-100 ui-widget">
+                            <input class="form-control" id="searchdestino" autocomplete="off"
+                                placeholder="Buscar Destino">
+                        </div>
+                    </div>
+                    <div class="flex-fill p-1 inputs ">
+                        <div class="inner-addon right-addon w-100">
+                            <input id="fechaorigen" type="date" class="form-control" placeholder="Fecha Ida" />
+                        </div>
+                    </div>
+                    <div class="flex-fill p-1 inputs">
+                        <div class="inner-addon right-addon w-100">
+                            <input id="fecharegreso" type="date" class="form-control" placeholder="Fecha Regresada" />
+                        </div>
+                    </div>
+                    <div class="flex-fill p-0 inputs">
+                        <div class="d-block inner-addon right-addon p-0 h-100 w-100">
+                            <button class="btn h-100 btn-block btn-danger">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="destinos" class="text-center">
+        <div>
+            <h2 class="colortextprincipal">Destinos mas buscados</h2>
+            <span>Encuentra las mejores ofertas, compra tu pasaje de bus y <b>emprende tu viaje</b></span>
+        </div>
+        <div id="ofertas" class="row m-0">
+            <div class="col-md-4">
+                <div class="carta">
+                    <div class="w-100 contenido">
+                        <img src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2018/02/piramides_giza-1024x640.jpg"
+                            class="imgoferta">
+                        <h2 class="lugarid">sasdasd</h2>
+                        <div class="hover">
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <span>Desde</span><br>
+                        <h3>$5000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w-100 contenido">
+                    <img src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2018/02/piramides_giza-1024x640.jpg"
+                        class="imgoferta">
+                    <h2 class="lugarid">sasdasd</h2>
+                    <div class="hover">
+                    </div>
+                </div>
+                <div id="">
+                    <p>asd</p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2018/02/piramides_giza-1024x640.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card w-100">
+                    <img src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2018/02/piramides_giza-1024x640.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="overlay-div"></div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="beneficios" class="row m-0 bgprincipal">
+            <div class="col-md-12">
+                <h3>Nuestros Beneficios</h3>
+            </div>
+            <div class="row w-100 m-0" id="rowimg">
+                <div class="col-md-3">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <img src="../img/agencias-y-terminales.png" alt="">
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <b>
+                                Cobertura
+                            </b>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <span>
+                                Llegamos a 11 departamentos: Bogota DC, Antioquia, Quindio, Risaralda, Caldas, Cauca,
+                                Valle del Cauca, Tolima, Putumayo, Caqueta y Huila
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight"><img src="../img/noticias.png" alt=""></div>
+                        <div class="p-2 bd-highlight"><b>
+                                Encomiendas
+                            </b></div>
+                        <div class="p-2 bd-highlight"><span>
+                                Ofrecemos el mejor servicio de envió y entrega de encomiendas.
+                            </span></div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight"><img src="../img/servicios.png" alt=""></div>
+                        <div class="p-2 bd-highlight"><b>
+                                Estaciones de Servicio
+                            </b></div>
+                        <div class="p-2 bd-highlight"><span>
+                                Visita nuestras estaciones de servicios en Neiva: EDS Aviatoor, EDS Norte, EDS Sur.
+                            </span></div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight"><img src="../img/organizacion.png" alt=""></div>
+                        <div class="p-2 bd-highlight"><b>
+                                Pasajes
+                            </b></div>
+                        <div class="p-2 bd-highlight"><span>
+                                Compra y adquieras con anticipación la ruta, la hora y la silla para que tengas un viaje
+                                tranquilo.
+                            </span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rutaspopulares" class="row ml-0 mr-0 mt-4">
+            <div class="col-md-12">
+                <h4>Nuestras rutas más populares</h4>
+            </div>
+            <div class="row col-md-12 mt-4 mr-0 ml-0">
+                <div class="col-md-4">
+                    <ul>
+                        <li>Bogota Salitre a Florencia
+                        <li>
+                            Bogota Sur a Florencia</li>
+                        Neiva a Medellin</li>
+                        <li>Cali a Florencia</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Armenia a Florencia</li>
+                        <li>Medellin a La Dorada</li>
+                        <li>Ibague a Medellin</li>
+                        <li>Pereira a Florencia</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>San Agustin a Garzon</li>
+                        <li>Popayan a Neiva</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <%- include('partials/footer.html'); -%>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+#nav{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+td{
+    margin: 0 !important;
+}
+body{
+    background-color: #f3f4f7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+}
+input[type='checkbox'] { 
+    height: 13px;
+}
+label{
+    margin-right: 10px;
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 12px;
+}
+#cuerpo{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.asientolibre{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 -48px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 56px;
+    margin: 0 !important;
+    display: block
+}
+
+.asientoocupado{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 -95px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 56px;
+    margin: 0 !important;
+    display: block
+}
+.asientoseleccionado{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 56px;
+    margin: 0 !important;
+    display: block
+}
+#asientosseleccionados{
+    display: none;
+}
+
+.tv{
+    background-image: url("/img/operadoras/bus_elements.jpg");
+    background-position: 0 -111px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 56px;
+    margin: 0 !important;
+    display: block;
+}
+.timon{
+    background-image: url("/img/operadoras/bus-wheel.jpg");
+    background-position: center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 56px;
+    margin: 0 !important;
+    display: block;
+}
+.baño{
+    background-image: url("/img/operadoras/bus_elements.jpg");
+    background-position: 0 -149px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 56px;
+    margin: 0 !important;
+    display: block;
+}
+#contenttable{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    border-color: #dcdfe8;
+    border-style: solid;
+}
+#instrucciones{
+    position: absolute;
+    bottom: 30%;
+}
+div.middle-div {
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(30%);
+  }
+td{
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0px !important;
+}
+table{
+    width: 250px !important;
+}
+
+#navig{
+    /* border-top: white;
+    border-left: white;
+    border-right: white; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-color: #d0ccd0;
+    border-style: dashed;
+    border-width: 0px 0px 1px 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.tooltip-inner {
+    background-color: #BF0811;
+    color: #fff;
+}
+.tooltip.top .tooltip-arrow {
+    background-color: red !important;
+    border-top-color: #00acd6 !important;
+    border-bottom-color: #f00 !important;
+}
+
+.bgprincipal{
+    background-color: #BF0811 !important;
+    color: white;
+}
+.colortextprincipal{
+    color: #BF0811;
+}
+@media (max-width: 576px) {
+    #cuerpo{
+        padding-left: 20px ;
+        padding-right: 20px ;
+    }
+    td{
+        padding: 0px !important;
+    }
+    #instrucciones{
+        display: none;
+    }
+    #resultados{
+        display: none;
+    }
+}

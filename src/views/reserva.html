@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+
+    <!-- <script src="/bootstrap/dist/js/bootstrap.js"></script> -->
+
+    <%- include('partials/head.html'); -%>
+    <script src="/js/reserva.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reserva.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <%- include('partials/navigation.html'); -%>
+    <div class="row ml-0 mr-0 mt-2 mb-2" id="navig">
+        <span>Búsqueda de Viajes Resultado de búsqueda y Selección de Silla</span>
+    </div>
+    <div id="cuerpo">
+        <div class="row ml-0 mr-0 mt-4 mb-4">
+            <div class="col-md-12">
+                Salida a Medellin a Neiva
+            </div>
+            <div class="col-md-12">
+                <span>Fecha salida</span>
+            </div>
+        </div>
+        <div class="row m-0 mt-4">
+            <div id="resultados" class="col-md-2 px-md-2  p-0 w-100">
+                <div id="resultado" class="bgprincipal shadow p-2 bg-white ">
+                    <span>Resultado</span>
+                </div>
+                <div class="shadow bg-white p-2">
+                    <span class="m-0 ">Empresa de Transportes</span>
+                </div>
+                <div class="shadow p-2 bg-white ">
+                    <div class="checkbox"><label><input type="checkbox" checked="checked" value="Aerotour"> Aerotour
+                        </label></div>
+                    <div class="checkbox"><label><input type="checkbox" checked="checked" value="Aerotour"> Otras
+                            empresas
+                        </label></div>
+                </div>
+                <div class="shadow bg-white p-2 ">Tipos de Avion</div>
+                <div class="shadow bg-white p-2">
+                    <div class="checkbox"><label><input type="checkbox" checked="checked" value="Aerotour"> Navette
+                        </label></div>
+                    <div class="checkbox"><label><input type="checkbox" checked="checked" value="Aerotour"> Navette G7
+                        </label></div>
+                    <div class="checkbox"><label><input type="checkbox" checked="checked" value="Aerotour"> Navette XL
+                        </label></div>
+                </div>
+            </div>
+            <div class="col px-md-10 p-0  w-100">
+                <div class="d-flex flex-row-reverse ml-0 mr-0 mb-2">
+                    <form class="form-inline">
+                        <label>Ordenar por</label>
+                        <select class="form-control form-control-sm">
+                            <option value="usa">Salida</option>
+                            <option value="india">India</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body row m-0 mt-4 p-0">
+                                <div class="col-md-2 position-relative">
+                                    <div id="instrucciones">
+                                        <div class="d-flex flex-row">
+                                            <div class="asientolibre "></div>
+                                            <div class="middle-div">Disponible</div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="asientoseleccionado "></div>
+                                            <div class="middle-div">Seleccionado</div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="asientoocupado"></div>
+                                            <div class="middle-div">Ocupado</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div>
+                                        <span>Modelo de Avion</span>
+                                    </div>
+                                    <div id="contenttable">
+                                        <table id="tableasientos" class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="timon"></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="timon"></div>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="tv"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoseleccionado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientolibre m-0 seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="asientoocupado" data-placement="top"
+                                                            data-toggle="tooltip" title="$38.000">
+                                                            <span>1</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div data-toggle="tooltip" data-placement="top" title=""
+                                                            class="asientoocupado seat seat-available"
+                                                            data-original-title="$82,000">
+                                                            <span></span> <span class="seat-number">01</span></div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="baño"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="baño"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pl-0">
+                                    <div id="asientosselecionadosclick">
+                                        <span>Sillas Seleccionadas
+                                        </span>
+                                        <div id="asientosseleccionados">
+                                            <div class="d-flex flex-row">
+                                                <div class="asientoseleccionado"></div>
+                                                <div><span>
+                                                        $19.00
+                                                    </span><br>
+                                                    <span>
+                                                        Valor Trayecto por Persona
+                                                    </span></div>
+                                                <div>
+                                                    <button class="btn p-0 borrarselecionado" style="color: red;">
+                                                        <i class="far fa-trash-alt fa-2x"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button onclick="pagar()" class="btn btn-danger">
+                                            Continuar
+                                        </button>
+                                    </div>
+                                    <div id="btn_pago">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header pl-0 pr-0" id="headingTwo">
+                            <div class="row m-0">
+                                <div class="col-sm-2 w-100 text-center">
+                                    <img src="../img/AER2.png" alt="" width="100%">
+                                </div>
+                                <div class="col-sm-4 d-flex flex-row mb-3">
+                                    <div class="p-2 w-100">
+                                        <span>
+                                            <span>Salida</span><br>
+                                            <h5>15:00</h5>
+                                            <span>22,sep</span>
+                                        </span>
+                                    </div>
+                                    <div class="p-2 w-100">
+                                        <span>Llegada</span><br>
+                                        <h5>15:00</h5>
+                                        <span>22,sep</span>
+                                    </div>
+                                    <div class="p-2 w-100">
+                                        <span>Sillas</span><br>
+                                        <h5>10</h5>
+                                        <span>Disponibles</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mx-auto">
+                                    <div class="row mx-auto">
+                                        Navagete g7
+                                    </div>
+                                    <div class="row d-flex flex-row mx-auto">
+                                        <i class="fab fa-instagram fa-2x"
+                                            title="This symbolizes your being locked inside"></i>
+                                        <i class="fab fa-instagram fa-2x"
+                                            title="This symbolizes your being locked inside"></i>
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <button class="btn btn-block btn-danger collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Ver asientos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table style="width:100%">
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <td>Jill</td>
+                                        <td>Smith</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eve</td>
+                                        <td>Jackson</td>
+                                        <td>94</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
