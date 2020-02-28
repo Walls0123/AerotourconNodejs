@@ -22,10 +22,10 @@ function generarToken() {
         localStorage.setItem("token", response);
     });
 }
-function generateAuthorization(transactionToken){
+function generateAuthorization(transactionToken,numerodecompra){
     
     generarToken()
-    generarSesion();
+    // generarSesion();
     console.log(reserva)
     var merchantId = 522591303
     var importe = 2
@@ -39,7 +39,7 @@ function generateAuthorization(transactionToken){
         "order":{
             amount:2,
             currency:"PEN",
-            purchaseNumber:51465465,
+            purchaseNumber:numerodecompra,
             tokenId:transactionToken
         },
         "recurrence":null,
@@ -50,7 +50,7 @@ function generateAuthorization(transactionToken){
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": urlautorization,
+        "url": urlautorization+merchantId,
         "method": "POST",
         "headers": {
             "Authorization": tokengenerado,

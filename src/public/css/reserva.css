@@ -138,6 +138,12 @@ table{
 .colortextprincipal{
     color: #BF0811;
 }
+.imgaerolinea{
+    width: 100% !important;
+}
+span{
+    font-size: 11px;
+}
 @media (max-width: 576px) {
     #cuerpo{
         padding-left: 20px ;

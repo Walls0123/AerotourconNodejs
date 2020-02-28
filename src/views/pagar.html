@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,16 @@
     <!-- <script src="/bootstrap/dist/js/bootstrap.js"></script> -->
     <title>Document</title>
 </head>
-<body>
-    <script>var reserva = "<%= reserva.object.transactionToken %>";
-    console.log(reserva)
-    generateAuthorization(reserva);
-    ;</script>
 
+<body>
+    <script>
+        var numerodecompra = "<%= reserva.purchasenumber%>"
+        var reserva = "<%= reserva.object.transactionToken %>";
+
+        generateAuthorization(reserva, numerodecompra);
+        ;</script>
+    <img src="" alt="" width="100%">
 </body>
+
 
 </html>

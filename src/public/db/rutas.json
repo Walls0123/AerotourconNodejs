@@ -1,9 +1,134 @@
 [
     {
         "codigoempresa":"AER",
-        "codigobus":"10AER",
+        "urlimg":"http://localhost/aerotour/img/AER2.png",
         "codigoruta":1010,
-        "hora":"2020-02-05"
+        "hora":"16:34",
+        "bus":{
+            "codigobus":"10AER",
+            "numeroasientos":10,
+            "listaasientos":[
+                {
+                    "numasiento":1,
+                    "disponible":true
+                },
+                {
+                    "numasiento":2,
+                    "disponible":true
+                },
+                {
+                    "numasiento":3,
+                    "disponible":false
+                },
+                {
+                    "numasiento":4,
+                    "disponible":true
+                },
+                {
+                    "numasiento":5,
+                    "disponible":false
+                },
+                {
+                    "numasiento":6,
+                    "disponible":true
+                },
+                {
+                    "numasiento":7,
+                    "disponible":true
+                },
+                {
+                    "numasiento":8,
+                    "disponible":true
+                },
+                {
+                    "numasiento":9,
+                    "disponible":true
+                },
+                {
+                    "numasiento":10,
+                    "disponible":true
+                }
+            ],
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
+        
+    },
+    {
+        "codigoempresa":"LET",
+        "urlimg":"http://localhost/aerotour/img/AER2.png",
+        "codigoruta":1010,
+        "hora":"10:34",
+        "bus":{
+            "codigobus":"10LET",
+            "numeroasientos":46,
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
+        
+    },
+    {
+        "codigoempresa":"LAT",
+        "urlimg":"http://localhost/aerotour/img/LAT.png",
+        "codigoruta":1010,
+        "hora":"11:34",
+        "bus":{
+            "codigobus":"10LAT",
+            "numeroasientos":58,
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
+        
+    },
+    {
+        "codigoempresa":"LAT2",
+        "urlimg":"http://localhost/aerotour/img/LAT.png",
+        "codigoruta":1010,
+        "hora":"18:34",
+        "bus":{
+            "codigobus":"10LAT",
+            "numeroasientos":46,
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
+        
+    },
+    {
+        "codigoempresa":"LAT3",
+        "urlimg":"http://localhost/aerotour/img/LAT.png",
+        "codigoruta":1010,
+        "hora":"18:34",
+        "bus":{
+            "codigobus":"10LAT",
+            "numeroasientos":46,
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
+        
+    },
+    {
+        "codigoempresa":"LAT4",
+        "urlimg":"http://localhost/aerotour/img/LAT.png",
+        "codigoruta":1010,
+        "hora":"18:34",
+        "bus":{
+            "codigobus":"10LAT",
+            "numeroasientos":46,
+            "tipo":"Normal",
+            "Caracteristicas":[
+                "Aire","Bus Cama"
+            ]
+        }
         
     }
 ]
