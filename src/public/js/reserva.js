@@ -33,29 +33,279 @@ $(document).ready(function () {
 
 });
 function generarAsientos(data, id) {
-    console.log(data)
-    var html = "<table><tr>";
-    $.each(data['listaasientos'],function(i,item) {
-        if(item.disponible==false){
-            html = html + `<td class="asientoocupado">${item.numasiento}</td>`;
-            
-        }else{
-            html = html + `<td class="asientolibre">${item.numasiento}</td>`;
-        }
-    })
-    // var html = "<table><tr>";
-    // for (i = 0; i < 4; i++) {
-    //     if(i==3){
-    //         html = html + "<td>" + (i + 5) + "</td>";
-    //     }
-    //     else{
-    //         html = html + "<td>" + (i + 1) + "</td>";
-    //     }
-        
-    // }
-    html = html + "</tr></table>";
 
-    $(`#asientos${id}`).append(html);
+    var html = `<div class="col-sm-6 text-center tablaborde">
+    <span>Segundo Piso</span>
+    <table><tr>`;
+    //Timon
+    // html = html + `<td><div></div></td>` +
+    //     `<td><div class="timon"></div></td>` +
+    //     `<td><div></div></td>` + `<td><div class="timon"></div></td>` + `<td><div></div></td>`
+    //Primera Fila
+    html = html + `<tr>`;
+    let indexprincipal = 0
+    for (let index = 0; index < 2; index++) {
+        const element = data['listaasientos'][index];
+        if (element.disponible) {
+            html = html + `<td><div data-toggle="tooltip" data-placement="top" title=""
+            data-original-title="$82,000"class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+
+    }
+    html = html + `<td class="tdtv"><div class="tv"></div></td>`;
+    for (let index = indexprincipal; index < 4; index++) {
+        const element = data['listaasientos'][index];
+        if (element.disponible) {
+            html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+    }
+    html = html + `</tr>`
+    //Segunda,terecera,cuarta..fila
+
+    for (let i = 0; i < 3; i++) {
+        html = html + `<tr>`
+        for (let index = 0; index < 2; index++) {
+            const element = data['listaasientos'][indexprincipal];
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+        }
+        html = html + `<td class="tdtv"><div></div></td>`;
+        for (let index = 0; index < 2; index++) {
+            const element = data['listaasientos'][indexprincipal];
+            if (data['listaasientos'].length == indexprincipal) {
+                break;
+            }
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+        }
+        html = html + `</tr>`;
+        //quinta fila
+        //Primera Fila
+    }
+    html = html + `<tr>`;
+    for (let index = 0; index < 2; index++) {
+        const element = data['listaasientos'][indexprincipal];
+        if (element.disponible) {
+            html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+    }
+    html = html + `<td class="tdtv"><div class="tv"></div></td>`;
+    for (let index = 0; index < 2; index++) {
+        const element = data['listaasientos'][indexprincipal];
+        if (element.disponible) {
+            html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+    }
+    html = html + `</tr>`
+    //Fin asiento
+    for (let i = 0; i < 2; i++) {
+        html = html + `<tr>`
+        for (let index = 0; index < 2; index++) {
+            const element = data['listaasientos'][indexprincipal];
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+        }
+        html = html + `<td class="tdtv"><div></div></td>`;
+        for (let index = 0; index < 2; index++) {
+            const element = data['listaasientos'][indexprincipal];
+            if (data['listaasientos'].length == indexprincipal) {
+                break;
+            }
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+        }
+        html = html + `</tr>`;
+
+        //quinta fila
+        //Primera Fila
+    }
+    html = html + `<tr>`;
+    for (let index = 0; index < 2; index++) {
+        const element = data['listaasientos'][indexprincipal];
+        if (element.disponible) {
+            html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+    }
+    html = html + `<td class="tdtv"><div class="tv"></div></td>`;
+    for (let index = 0; index < 2; index++) {
+        const element = data['listaasientos'][indexprincipal];
+        if (element.disponible) {
+            html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        } else {
+            html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+            indexprincipal++
+        }
+    }
+    html = html + `</tr>`
+    let abort=false
+    for (let i = 0; i < 4; i++) {
+        html = html + `<tr>`
+        for (let index = 0; index < 2; index++) {
+            
+            const element = data['listaasientos'][indexprincipal];
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+            if(indexprincipal==46){
+                console.log(indexprincipal);
+                abort=true
+                break;
+                
+            }
+        }
+        if(abort){
+            html = html + `<td><div><div></td>`+`<td><div class="baño"></di></td><td><div class="baño"></di></td>`
+            break
+        }
+        html = html + `<td class="tdtv"><div></div></td>`;
+        for (let index = 0; index < 2; index++) {
+            const element = data['listaasientos'][indexprincipal];
+            if (data['listaasientos'].length == indexprincipal) {
+                break;
+            }
+            if (element.disponible) {
+                html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            } else {
+                html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                indexprincipal++
+            }
+        }
+        //quinta fila
+        //Primera Fila
+    }
+    html=html+`<tr`
+    html = html + "</table></div>";
+    console.log(data['listaasientos'].length)
+    console.log(indexprincipal)
+    $(`#asientos${id}`).first().append(html)
+    $(`#asientos${id}>div>table>tbody>tr>td>div`).tooltip()
+    indexprincipal--;
+    if (indexprincipal >=45) {
+        indexprincipal++
+        var html = `<div class="col-sm-6 text-center tablaborde tablaborde2">
+        <span>Primer Piso</span>
+        <table><tr>`;
+            //Timon
+            html = html + `<td><div></div></td>` +
+                `<td><div></div></td>` +
+                `<td><div></div></td>` + `<td><div class="timon"></div></td>` + `<td><div></div></td>`
+            //Primera Fila
+            html = html + `<tr>`;
+            for (let index = 0; index < 2; index++) {
+                const element = data['listaasientos'][indexprincipal];
+                if (element.disponible) {
+                    html = html + `<td><div data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="$82,000"class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                    indexprincipal++
+                } else {
+                    html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                    indexprincipal++
+                }
+            }
+            html=html+`<td class="tdtv"><div class="tv"></div></td><td><div></div></td>`;
+            if(data['listaasientos'][indexprincipal].disponible){
+                html=html+`</td><td><div class="asientolibre position-relative"><span class="numasiento">${data['listaasientos'][indexprincipal].numasiento}</span></div></td>`
+            }else{
+                html=html+`</td><td><div class="asientoocupado position-relative"><span class="numasiento">${data['listaasientos'][indexprincipal].numasiento}</span></div></td>`
+            }
+            indexprincipal++;
+            abort=false
+            for (let i = 0; i < 4; i++) {
+                html = html + `<tr>`
+                for (let index = 0; index < 2; index++) {
+                    
+                    const element = data['listaasientos'][indexprincipal];
+                    if(indexprincipal==58){
+                        abort=true
+                        break;
+                    }
+                    if (element.disponible) {
+                        html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                        indexprincipal++
+                    } else {
+                        html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                        indexprincipal++
+                    }
+                    if(indexprincipal==58){
+                        abort=true
+                        break;
+                        
+                    }
+                }
+                if(abort){
+                    break
+                }
+                html = html + `<td class="tdtv"><div></div></td>`;
+                for (let index = 0; index < 1; index++) {
+                    const element = data['listaasientos'][indexprincipal];
+                    if (data['listaasientos'].length == indexprincipal) {
+                        break;
+                    }
+                    html=html+`<td><div></div></td>`
+                    if (element.disponible) {
+                        html = html + `<td><div class="position-relative asientolibre"><span class="numasiento">${element.numasiento}</span></div></td>`
+                    } else {
+                        html = html + `<td><div class="position-relative asientoocupado"><span class="numasiento">${element.numasiento}</span></div></td>`
+                    }
+                    indexprincipal++
+                }
+                //quinta fila
+                //Primera Fila
+            }
+
+            html = html + `</tr>`
+            //Segunda,terecera,cuarta..fila
+            html = html + "</table></div>";
+            $(`#asientos${id}`).last().append(html)
+    }
+    
+    $(`#asientos${id}>div>table>tbody>tr>td>div`).tooltip()
 }
 
 //Credenciales Pagos
@@ -107,10 +357,22 @@ function gererarrutas() {
             </div>
         
             <div id="collapse${data[i].codigoempresa}" class="collapse" aria-labelledby="heading${data[i].codigoempresa}" data-parent="#accordionExample">
-            <div class="card-body">
-                <div id="asientos${data[i].codigoempresa}"></div>
-                
+            <div class="card-body pl-0 pr-0">
+                <div class="row m-0 w-100">
+                            <div class="col-sm-2 bg-white">asd</div>
+                            <div class="col-sm-7">
+                                <div class="row m-0" id="asientos${data[i].codigoempresa}">
+                                <div class="col-sm-6">
+                                    <div></div>
+                                </div>
+                                <div class="col-sm-6">asdsd</div>
+                                </div>
+                            </div> 
+                            <div class="col-sm-3">asdsd</div>
+                            </div>
+                            
                 </div>
+                
             </div>
             </div>`)
         })

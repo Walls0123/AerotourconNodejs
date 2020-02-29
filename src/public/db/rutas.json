@@ -1,134 +1,511 @@
 [
     {
-        "codigoempresa":"AER",
-        "urlimg":"http://localhost/aerotour/img/AER2.png",
-        "codigoruta":1010,
-        "hora":"16:34",
-        "bus":{
-            "codigobus":"10AER",
-            "numeroasientos":10,
-            "listaasientos":[
+        "codigoempresa": "AER",
+        "urlimg": "http://localhost/aerotour/img/AER2.png",
+        "codigoruta": 1010,
+        "hora": "16:34",
+        "bus": {
+            "codigobus": "10AER",
+            "numeroasientos": 10,
+            "listaasientos": [
                 {
-                    "numasiento":1,
-                    "disponible":true
+                    "numasiento": 1,
+                    "disponible": true
                 },
                 {
-                    "numasiento":2,
-                    "disponible":true
+                    "numasiento": 2,
+                    "disponible": true
                 },
                 {
-                    "numasiento":3,
-                    "disponible":false
+                    "numasiento": 3,
+                    "disponible": false
                 },
                 {
-                    "numasiento":4,
-                    "disponible":true
+                    "numasiento": 4,
+                    "disponible": true
                 },
                 {
-                    "numasiento":5,
-                    "disponible":false
+                    "numasiento": 5,
+                    "disponible": false
                 },
                 {
-                    "numasiento":6,
-                    "disponible":true
+                    "numasiento": 6,
+                    "disponible": true
                 },
                 {
-                    "numasiento":7,
-                    "disponible":true
+                    "numasiento": 7,
+                    "disponible": true
                 },
                 {
-                    "numasiento":8,
-                    "disponible":true
+                    "numasiento": 8,
+                    "disponible": true
                 },
                 {
-                    "numasiento":9,
-                    "disponible":true
+                    "numasiento": 9,
+                    "disponible": true
                 },
                 {
-                    "numasiento":10,
-                    "disponible":true
+                    "numasiento": 10,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 11,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 12,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 13,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 14,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 15,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 16,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 17,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 18,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 19,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 20,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 21,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 22,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 23,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 24,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 25,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 26,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 27,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 28,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 29,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 30,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 31,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 32,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 33,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 34,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 35,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 36,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 37,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 38,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 39,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 40,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 41,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 42,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 43,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 44,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 45,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 46,
+                    "disponible": false
                 }
             ],
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     },
     {
-        "codigoempresa":"LET",
-        "urlimg":"http://localhost/aerotour/img/AER2.png",
-        "codigoruta":1010,
-        "hora":"10:34",
-        "bus":{
-            "codigobus":"10LET",
-            "numeroasientos":46,
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+        "codigoempresa": "LET",
+        "urlimg": "http://localhost/aerotour/img/AER2.png",
+        "codigoruta": 1010,
+        "hora": "10:34",
+        "bus": {
+            "codigobus": "10LET",
+            "numeroasientos": 46,
+            "listaasientos": [
+                {
+                    "numasiento": 1,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 2,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 3,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 4,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 5,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 6,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 7,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 8,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 9,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 10,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 11,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 12,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 13,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 14,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 15,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 16,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 17,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 18,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 19,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 20,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 21,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 22,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 23,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 24,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 25,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 26,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 27,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 28,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 29,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 30,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 31,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 32,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 33,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 34,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 35,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 36,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 37,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 38,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 39,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 40,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 41,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 42,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 43,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 44,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 45,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 46,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 47,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 48,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 49,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 50,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 51,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 52,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 53,
+                    "disponible": false
+                }, {
+                    "numasiento": 54,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 55,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 56,
+                    "disponible": false
+                },
+                {
+                    "numasiento": 57,
+                    "disponible": true
+                },
+                {
+                    "numasiento": 58,
+                    "disponible": false
+                }
+            ],
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     },
     {
-        "codigoempresa":"LAT",
-        "urlimg":"http://localhost/aerotour/img/LAT.png",
-        "codigoruta":1010,
-        "hora":"11:34",
-        "bus":{
-            "codigobus":"10LAT",
-            "numeroasientos":58,
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+        "codigoempresa": "LAT",
+        "urlimg": "http://localhost/aerotour/img/LAT.png",
+        "codigoruta": 1010,
+        "hora": "11:34",
+        "bus": {
+            "codigobus": "10LAT",
+            "numeroasientos": 58,
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     },
     {
-        "codigoempresa":"LAT2",
-        "urlimg":"http://localhost/aerotour/img/LAT.png",
-        "codigoruta":1010,
-        "hora":"18:34",
-        "bus":{
-            "codigobus":"10LAT",
-            "numeroasientos":46,
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+        "codigoempresa": "LAT2",
+        "urlimg": "http://localhost/aerotour/img/LAT.png",
+        "codigoruta": 1010,
+        "hora": "18:34",
+        "bus": {
+            "codigobus": "10LAT",
+            "numeroasientos": 46,
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     },
     {
-        "codigoempresa":"LAT3",
-        "urlimg":"http://localhost/aerotour/img/LAT.png",
-        "codigoruta":1010,
-        "hora":"18:34",
-        "bus":{
-            "codigobus":"10LAT",
-            "numeroasientos":46,
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+        "codigoempresa": "LAT3",
+        "urlimg": "http://localhost/aerotour/img/LAT.png",
+        "codigoruta": 1010,
+        "hora": "18:34",
+        "bus": {
+            "codigobus": "10LAT",
+            "numeroasientos": 46,
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     },
     {
-        "codigoempresa":"LAT4",
-        "urlimg":"http://localhost/aerotour/img/LAT.png",
-        "codigoruta":1010,
-        "hora":"18:34",
-        "bus":{
-            "codigobus":"10LAT",
-            "numeroasientos":46,
-            "tipo":"Normal",
-            "Caracteristicas":[
-                "Aire","Bus Cama"
+        "codigoempresa": "LAT4",
+        "urlimg": "http://localhost/aerotour/img/LAT.png",
+        "codigoruta": 1010,
+        "hora": "18:34",
+        "bus": {
+            "codigobus": "10LAT",
+            "numeroasientos": 46,
+            "tipo": "Normal",
+            "Caracteristicas": [
+                "Aire",
+                "Bus Cama"
             ]
         }
-        
     }
 ]

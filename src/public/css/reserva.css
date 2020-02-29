@@ -29,17 +29,21 @@ label{
     background-position: 0 -48px;
     background-repeat: no-repeat;
     height: 50px;
-    width: 56px;
+    width: 44px;
     margin: 0 !important;
     display: block
 }
-
+.numasiento{
+    position: absolute;
+    bottom: 50%;
+    left: 43%;
+}
 .asientoocupado{
     background-image: url("/img/operadoras/asientos.png");
     background-position: 0 -95px;
     background-repeat: no-repeat;
     height: 50px;
-    width: 56px;
+    width: 44px;
     margin: 0 !important;
     display: block
 }
@@ -48,7 +52,7 @@ label{
     background-position: 0 0px;
     background-repeat: no-repeat;
     height: 50px;
-    width: 56px;
+    width: 44px;
     margin: 0 !important;
     display: block
 }
@@ -61,7 +65,7 @@ label{
     background-position: 0 -111px;
     background-repeat: no-repeat;
     height: 35px;
-    width: 56px;
+    width: 35px;
     margin: 0 !important;
     display: block;
 }
@@ -71,7 +75,7 @@ label{
     background-size: 30px 30px;
     background-repeat: no-repeat;
     height: 35px;
-    width: 56px;
+    width: 44px;
     margin: 0 !important;
     display: block;
 }
@@ -108,7 +112,16 @@ td{
 table{
     width: 250px !important;
 }
-
+.tablaborde{
+    margin-top: 1rem!important;
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid #dedede;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+.tablaborde2{
+    height: 300px !important;
+}
 #navig{
     /* border-top: white;
     border-left: white;
@@ -144,6 +157,9 @@ table{
 span{
     font-size: 11px;
 }
+.tdtv{
+    width: 42px !important;
+ }
 @media (max-width: 576px) {
     #cuerpo{
         padding-left: 20px ;
