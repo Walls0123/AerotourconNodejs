@@ -21,28 +21,26 @@ $(document).ready(function () {
         let id = this.id
         $.getJSON('db/rutas.json', function (data) {
             $.each(data, function (i, item) {
-                $(`#asientos${data[i].codigoempresa}`).empty();
+                // $(`#asientos${data[i].codigoempresa}`).empty();
                 // $(`#asientos${data[i].codigoempresa}`).append(`<h1>${data[i].codigoempresa}<h1>`)
 
                 if (data[i].codigoempresa === id) {
-                    generarAsientos(data[i].bus, id)
+                    generarasientocorregido(data[i].bus, id)
                 }
             })
         })
     })
 
 });
+function generarasientocorregido(data,id){
+    console.log($(`#asientos${id}`))
+}
 function generarAsientos(data, id) {
 
-    var html = `<div class="col-sm-6 text-center tablaborde">
-    <span>Segundo Piso</span>
-    <table><tr>`;
-    //Timon
-    // html = html + `<td><div></div></td>` +
-    //     `<td><div class="timon"></div></td>` +
-    //     `<td><div></div></td>` + `<td><div class="timon"></div></td>` + `<td><div></div></td>`
-    //Primera Fila
-    html = html + `<tr>`;
+    var html = `<div class="col-md-6 text-center tablaborde">
+    <span>Segundo Piso</span>`;
+
+    html = html + '<table class="table"><tr>';
     let indexprincipal = 0
     for (let index = 0; index < 2; index++) {
         const element = data['listaasientos'][index];
@@ -228,7 +226,7 @@ function generarAsientos(data, id) {
     indexprincipal--;
     if (indexprincipal >=45) {
         indexprincipal++
-        var html = `<div class="col-sm-6 text-center tablaborde tablaborde2">
+        var html = `<div class="col-md-6 text-center tablaborde tablaborde2">
         <span>Primer Piso</span>
         <table><tr>`;
             //Timon
@@ -323,12 +321,12 @@ function gererarrutas() {
     $.getJSON('db/rutas.json', function (data) {
         $.each(data, function (i, item) {
             // alert(data[i].codigoempresa)
-            $('#accordionExample').append(`<div class="card">
-            <div class="card-header p-0" id="heading${data[i].codigoempresa}">
+            $('#accordionExample').append(`<div class="card mb-2">
+            <div class="card-header bg-white shadow p-0" id="heading${data[i].codigoempresa}">
             <button id="${data[i].codigoempresa}" class="btn btn-block showmodal" type="button" data-toggle="collapse" data-target="#collapse${data[i].codigoempresa}" aria-expanded="false" aria-controls="collapse${data[i].codigoempresa}">
                     <div class="row m-0">
                         <div class="col-md-2 p-0">
-                            <img src="${data[i].urlimg}" alt="" width="100%">
+                            <img src="${data[i].urlimg}" class="imglogo" alt="">
                         </div>
                         <div class="col-md-5">
                             <div class="d-flex justify-content-around">
@@ -356,20 +354,15 @@ function gererarrutas() {
             </button>
             </div>
         
-            <div id="collapse${data[i].codigoempresa}" class="collapse" aria-labelledby="heading${data[i].codigoempresa}" data-parent="#accordionExample">
+            <div id="collapse${data[i].codigoempresa}" class="collapse bg-white pt-1" aria-labelledby="heading${data[i].codigoempresa}" data-parent="#accordionExample">
             <div class="card-body pl-0 pr-0">
                 <div class="row m-0 w-100">
-                            <div class="col-sm-2 bg-white">asd</div>
-                            <div class="col-sm-7">
-                                <div class="row m-0" id="asientos${data[i].codigoempresa}">
-                                <div class="col-sm-6">
-                                    <div></div>
-                                </div>
-                                <div class="col-sm-6">asdsd</div>
-                                </div>
+                            <div class="col-md-2 bg-danger w-100">Instrucciones</div>
+                            <div class="col-md-7 row m-0 bg-primary w-100" id="asientos${data[i].codigoempresa}">
+                                <div class="col-md-6 bg-primary w-100"><h1 class="w-100">hola</h1></div>
+                                <div class="col-md-6 bg-primary w-100"><h1 class="w-100">hola</h1></div>
                             </div> 
-                            <div class="col-sm-3">asdsd</div>
-                            </div>
+                            <div class="col-md-3 bg-dark w-100">asdsd</div>
                             
                 </div>
                 
@@ -380,6 +373,7 @@ function gererarrutas() {
     })
 
 }
+
 
 function pagar() {
     generarToken();

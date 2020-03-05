@@ -9,6 +9,9 @@ router.get('/', (req, res) => {
 router.get('/reserva', (req, res) => {
     res.render('reserva.html', { title: 'Reserva' })
 });
+router.get('/comprar', (req, res) => {
+    res.render('comprar.html', { title: 'Comprar' })
+})
 router.post('/pagar', (req, res) => {
     res.render('pagar.html', { token: req })
 })
@@ -18,6 +21,7 @@ router.get('/pagar/', (req, res) => {
 router.get('/timeout/', (req, res) => {
     res.render('pagar.html')
 })
+
 router.get('/get/:search', (req, res) => {
     //Get Params
     var config = {

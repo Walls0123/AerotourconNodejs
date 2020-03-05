@@ -1,0 +1,147 @@
+body{
+    background-color: #f3f4f7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+}
+.imgempresa{
+    width: 100px;
+    height: 24px;
+}
+.demanda{
+    font-size: 9px;
+    line-height: 1;
+    color: #999;
+    margin: 2px 0 0;
+    display: block;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+}
+.btn-mas{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px 0 2px;
+    padding: 6px 18px;
+    color: #fff;
+    border-color: #ff4f3a;
+    background-image: linear-gradient(180deg,#ff690f 0,#ff4f3a 100%);
+    border-radius: 0;
+    z-index: 1010;
+}
+
+#navig{
+    /* border-top: white;
+    border-left: white;
+    border-right: white; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-color: #d0ccd0;
+    border-style: dashed;
+    border-width: 0px 0px 1px 0px;
+}
+#infoasientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+/* Asientos */
+.asientolibre{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 -48px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 44px;
+    margin: 0 !important;
+    display: block;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.asientoocupado{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 -95px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 44px;
+    margin: 0 !important;
+    display: block;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.asientoseleccionado{
+    background-image: url("/img/operadoras/asientos.png");
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 44px;
+    margin: 0 !important;
+    display: block;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.tv{
+    background-image: url("/img/operadoras/bus_elements.jpg");
+    background-position: 0 -111px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 0 !important;
+    display: block;
+}
+.timon{
+    background-image: url("/img/operadoras/bus-wheel.jpg");
+    background-position: center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 44px;
+    margin: 0 !important;
+    display: block;
+}
+tr td{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+.baño{
+    background-image: url("/img/operadoras/bus_elements.jpg");
+    background-position: 0 -149px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 44px;
+    margin: 0 !important;
+    display: block;
+}
+.borderbus{
+    display: table;
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid #dedede;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+.numasiento{
+    position: absolute;
+    bottom: 44%;
+    left: 36%;
+}
+.btn-cerrar{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+@media (max-width: 767px) and (min-width: 576px){
+    .ocultar2{
+        display: none!important;
+    }
+    .paddi{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    tr td{
+        padding-left: 16px !important;
+        margin: 0 !important;
+      }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .ocultar{
+        display: none!important;
+    }
+    
+}

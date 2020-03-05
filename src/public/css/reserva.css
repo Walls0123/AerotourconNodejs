@@ -31,7 +31,12 @@ label{
     height: 50px;
     width: 44px;
     margin: 0 !important;
-    display: block
+    display: block;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.btn-cerrar{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
 }
 .numasiento{
     position: absolute;
@@ -59,7 +64,14 @@ label{
 #asientosseleccionados{
     display: none;
 }
-
+#infoasientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.start-js-btn.modal-opener.default{
+    width: 100% !important;
+}
 .tv{
     background-image: url("/img/operadoras/bus_elements.jpg");
     background-position: 0 -111px;
@@ -95,9 +107,14 @@ label{
     border-color: #dcdfe8;
     border-style: solid;
 }
-#instrucciones{
+#instruciones{
     position: absolute;
-    bottom: 30%;
+    bottom: 50%;
+}
+.letrasinstrucciones{
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
 }
 div.middle-div {
     -webkit-transform: translateY(30%);
@@ -160,6 +177,10 @@ span{
 .tdtv{
     width: 42px !important;
  }
+.imglogo{
+    width: 120px;
+    height: 35px;
+}
 @media (max-width: 576px) {
     #cuerpo{
         padding-left: 20px ;
@@ -168,10 +189,20 @@ span{
     td{
         padding: 0px !important;
     }
-    #instrucciones{
-        display: none;
+    #instruciones{
+        display: none !important;
     }
     #resultados{
         display: none;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px){
+    .hidden-sm{
+        display: none!important;
+    }
+    #cuerpo{
+        padding-left: 20px ;
+        padding-right: 20px ;
     }
 }

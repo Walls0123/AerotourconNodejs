@@ -4,13 +4,14 @@
         "urlimg": "http://localhost/aerotour/img/AER2.png",
         "codigoruta": 1010,
         "hora": "16:34",
+        "precioboleto":120,
         "bus": {
             "codigobus": "10AER",
-            "numeroasientos": 10,
+            "numeroasientos": 46,
             "listaasientos": [
                 {
                     "numasiento": 1,
-                    "disponible": true
+                    "disponible": false
                 },
                 {
                     "numasiento": 2,
@@ -204,10 +205,11 @@
         "codigoempresa": "LET",
         "urlimg": "http://localhost/aerotour/img/AER2.png",
         "codigoruta": 1010,
+        "precioboleto":120,
         "hora": "10:34",
         "bus": {
             "codigobus": "10LET",
-            "numeroasientos": 46,
+            "numeroasientos": 58,
             "listaasientos": [
                 {
                     "numasiento": 1,
@@ -453,6 +455,7 @@
         "urlimg": "http://localhost/aerotour/img/LAT.png",
         "codigoruta": 1010,
         "hora": "11:34",
+        "precioboleto":120,
         "bus": {
             "codigobus": "10LAT",
             "numeroasientos": 58,
